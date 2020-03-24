@@ -1,400 +1,466 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ekşioğlu Birlik</title>
+    <title>EKŞİOĞLU &mdash; Kusursuz Yapılar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
     <link rel="stylesheet" href="css/aos.css">
-    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .site-navbar {
+            background: rgb(2, 134, 180) !important;
+        }
+
+        .site-navbar-top {
+            background: rgba(0, 0, 0, 0.55) !important;
+        }
+    </style>
+
+
+
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-    <div class="site-wrap" id="home-section">
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Yükleniyor...</span>
+        </div>
+    </div>
+
+    <div class="site-wrap">
+        <!-- mobile-menu -->
         <div class="site-mobile-menu site-navbar-target">
             <div class="site-mobile-menu-header">
                 <div class="site-mobile-menu-close mt-3">
-                    <span class="icon-close2 js-menu-toggle"></span>
+                    <span id="mobileMenuCloseBtn" class="icon-close2 js-menu-toggle"></span>
                 </div>
             </div>
             <div class="site-mobile-menu-body"></div>
         </div>
+        <!-- navbar -->
+        <div class="site-navbar-wrap">
 
-        <header class="site-navbar site-navbar-target bg-white" role="banner">
-            <div class="container">
-                <div class="row align-items-center position-relative">
-                    <div class="col-lg-4">
-                        <nav class="site-navigation text-right ml-auto " role="navigation">
-                            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                                <li class="active"><a href="index.html" class="nav-link">Ana Sayfa</a></li>
-                                <li><a href="projects.html" class="nav-link">Projelerimiz</a></li>
-                                <li><a href="catalog.html" class="nav-link">Katalog</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <div class="site-logo">
-
-                            <img src="images/img_5.jpg" style="width:70px;height:30px;" />
-                            <a href="index.html">Ekşioğlu Birlik</a>
+            <div class="site-navbar-top">
+                <div class="container py-3">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <a href="#" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+                            <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+                            <!--<a href="#" class="p-2 pl-0"><span class="icon-linkedin"></span></a>-->
+                            <a href="#" class="p-2 pl-0"><span class="icon-instagram"></span></a>
                         </div>
-
-                        <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-white"><span class="icon-menu h3 text-primary"></span></a></div>
-                    </div>
-                    <div class="col-lg-4">
-                        <nav class="site-navigation text-left mr-auto " role="navigation">
-                            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                                <li><a href="about.html" class="nav-link">Hakkımızda</a></li>
-                                <li><a href="referances.html" class="nav-link">Referanslarımız</a></li>
-                                <li><a href="contact.html" class="nav-link">İletişim</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                </div>
-            </div>
-        </header>
-
-
-        <div class="owl-carousel-wrapper">
-
-            <div class="box-92819">
-                <div class="owl-carousel slide-one-item-alt-text">
-                    <div>
-                        <h1 class="text-uppercase mb-3">Kesintisiz Yaşam</h1>
-                        <ul>
-                            <li>Jeneratör Sistemi</li>
-                            <li>Yangın Suyu Deposu</li>
-                            <li>Yaz-Kış İçme Suyu Deposu</li>
-                        </ul>
-                        <p class="mb-0"><a href="#" class="btn btn-primary rounded-0">Detaylar</a></p>
-                    </div>
-                    <div>
-                        <h1 class="text-uppercase mb-3">Kaliteli Yaşam</h1>
-                            <ul>
-                                <li>Sosyal Alanlar</li>
-                                <li>Çocuk Oyun Alanları</li>
-                                <li>Yaz-Kış Bahçesi</li>
-                            </ul>
-                        <p class="mb-0"><a href="#" class="btn btn-primary rounded-0">Detaylar</a></p>
-                    </div>
-                    <div>
-                        <h1 class="text-uppercase mb-3">Yeni Nesil Mimari</h1>
-                        <p>Her Daireye Kaplı Otopark</p>
-                        <p class="mb-0"><a href="#" class="btn btn-primary rounded-0">Detaylar</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="owl-carousel owl-1 ">
-                <div class="ftco-cover-1" style="background-image: url('images/hero_1.jpg');"></div>
-                <div class="ftco-cover-1" style="background-image: url('images/hero_2.jpg');"></div>
-                <div class="ftco-cover-1" style="background-image: url('images/hero_3.jpg');"></div>
-
-            </div>
-        </div>
-
-        <div class="site-section">
-            <div class="container">
-                <div class="row align-items-stretch">
-                    <div class="col-lg-4">
-                        <div class="h-100 bg-white box-29291">
-                            <h2 class="heading-39291">Hakkımızda<br></h2>
-                            <p></p>
-                            <p>
-                                Ekşioğlu Birlik İnşaat yeni bir proje ile sizlere hizmet etmeye devam ediyor. Bu projemiz İstanbul’un en merkezi noktasında. 15 Temmuz Şehitler Köprüsünün hemen yanında şehrin en müstesna yerinde. Siz saygıdeğer dost ve müşterilerimizi bu güzel lokasyona davet ediyoruz.
-                            </p>
-                            <p class="mt-5">
-                                <span class="d-block font-weight-bold text-black">Ekşioğlu Birlik</span>
-                                <span class="d-block font-weight-bold text-muted">Emre Ekşi</span>
-
-                                <img src="images/signature.svg" alt="Image" class="img-fluid" width="140">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="owl-carousel owl-3">
-                            <img src="images/about_1.jpg" alt="Image" class="img-fluid">
-                            <img src="images/about_2.jpg" alt="Image" class="img-fluid">
-                            <img src="images/about_3.jpg" alt="Image" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="site-section">
-            <div class="container">
-                <div class="row mb-5 align-items-center">
-                    <div class="col-md-7">
-                        <h2 class="heading-39291 mb-0">Hizmetlerimiz</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="">
-                        <div class="service-29193 text-center">
-                            <span class="img-wrap mb-5">
-                                <img src="fonts/flaticon/svg/001-stairs.svg" alt="Image" class="img-fluid">
-                            </span>
-                            <h3 class="mb-4"><a href="#">Modern Mimari</a></h3>
-                            <p>Yeni Nesil Mimari Tasarım Anlayışı</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-29193 text-center">
-                            <span class="img-wrap mb-5">
-                                <img src="fonts/flaticon/svg/004-blueprint.svg" alt="Image" class="img-fluid">
-                            </span>
-                            <h3 class="mb-4"><a href="#">İç Mimari</a></h3>
-                            <p>Modern İç Mimari</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-29193 text-center">
-                            <span class="img-wrap mb-5">
-                                <img src="fonts/flaticon/svg/003-lamp.svg" alt="Image" class="img-fluid">
-                            </span>
-                            <h3 class="mb-4"><a href="#">Dekorasyon</a></h3>
-                            <p>Dekoratif Zeka</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="">
-                        <div class="service-29193 text-center">
-                            <span class="img-wrap mb-5">
-                                <img src="fonts/flaticon/svg/002-kitchen.svg" alt="Image" class="img-fluid">
-                            </span>
-                            <h3 class="mb-4"><a href="#">Teknoloji</a></h3>
-                            <p>Teknolojik Yaşam Alanları</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-29193 text-center">
-                            <span class="img-wrap mb-5">
-                                <img src="fonts/flaticon/svg/005-dinning-table.svg" alt="Image" class="img-fluid">
-                            </span>
-                            <h3 class="mb-4"><a href="#">Lüks</a></h3>
-                            <p>Konfor Ve Lüks</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-29193 text-center">
-                            <span class="img-wrap mb-5">
-                                <img src="fonts/flaticon/svg/006-pantone.svg" alt="Image" class="img-fluid">
-                            </span>
-                            <h3 class="mb-4"><a href="#">Katalog Seçenekleri</a></h3>
-                            <p>Çeşitli Yaşam Alanları Tasarımı</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="site-section">
-            <div class="container">
-                <div class="row mb-5 align-items-center">
-                    <div class="col-md-7">
-                        <h2 class="heading-39291 mb-0">Projelerimiz</h2>
-                    </div>
-                    <div class="col-md-5 text-right">
-                        <p class="mb-0"><a href="#" class="more-39291">Tüm Projelerimiz</a></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="media-02819">
-                            <a href="#" class="img-link small"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-                            <h3><a href="#">ÜÇYILDIZ SİTESİ</a></h3>
-                            <span>Bosna Bulvarı / ÜSKÜDAR</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="media-02819">
-                            <a href="#" class="img-link"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-                            <h3><a href="#">EKŞİOĞLU BİRLİK SİTESİ</a></h3>
-                            <span>Tepeüstü / ÜMRANİYE</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="media-02819">
-                            <a href="#" class="img-link"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-                            <h3><a href="#">Burhaniye Konakları</a></h3>
-                            <span>Bosna Bulvarı / ÜSKÜDAR</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="media-02819">
-                            <a href="#" class="img-link small"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-                            <h3><a href="#">Burhaniye Konakları</a></h3>
-                            <span>Bosna Bulvarı / ÜSKÜDAR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="site-section section-4">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-7">
-                        <div class="slide-one-item owl-carousel">
-                            <blockquote class="testimonial-1">
-                                <span class="quote quote-icon-wrap"><span class="icon-format_quote"></span></span>
-                                <p>
-                                    Ekşioğlu Birlik İnşaat yeni bir proje ile sizlere hizmet etmeye devam ediyor. Bu projemiz İstanbul’un en merkezi noktasında. 15 Temmuz Şehitler Köprüsünün hemen yanında şehrin en müstesna yerinde. Siz saygıdeğer dost ve müşterilerimizi bu güzel lokasyona davet ediyoruz.
-                                </p>
-                                <cite><span class="text-black">Emre Ekşi</span> &mdash; <span class="text-muted">Proje Müdürü</span></cite>
-                            </blockquote>
-                            <!--<blockquote class="testimonial-1">
-                                <span class="quote quote-icon-wrap"><span class="icon-format_quote"></span></span>
-                                <p>Eligendi earum ad perferendis dolores, dolor quas. Ullam in, eaque mollitia suscipit id aspernatur rerum! Sit quibusdam ullam tempora quis, in voluptatum maiores veritatis recusandae!</p>
-                                <cite><span class="text-black">James Smith</span> &mdash; <span class="text-muted">CEO and Co-Founder</span></cite>
-                            </blockquote>
-                            <blockquote class="testimonial-1">
-                                <span class="quote quote-icon-wrap"><span class="icon-format_quote"></span></span>
-                                <p> Officia, eius omnis rem non quis eos excepturi cumque sequi pariatur eaque quasi nihil dicta tempore voluptate culpa, veritatis incidunt voluptatibus qui?</p>
-                                <cite><span class="text-black">Mike Dorney</span> &mdash; <span class="text-muted">CEO and Co-Founder</span></cite>
-                            </blockquote>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="site-section">
-            <div class="container">
-                <div class="row  mb-5">
-                    <div class="col-md-7">
-                        <h2 class="heading-39291">Bitmiş Projelerimiz</h2>
-                        <p>
-
-                        </p>
-
-                    </div>
-                </div>
-                <div class="row align-items-stretch">
-                    <div class="col-lg-3 col-md-6 mb-5">
-                        <div class="post-entry-1 h-100">
-
-                            <div class="post-entry-1-contents">
-                                <span class="meta">Ocak 30, 2019</span>
-                                <h2><a href="#">Ekşioğlu Birlik Sitesi</a></h2>
-                                <p class="my-3"><a href="#" class="more-39291">Detalı Bilgi</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5">
-                        <div class="post-entry-1 h-100">
-
-                            <div class="post-entry-1-contents">
-                                <span class="meta">Ocak 30, 2019</span>
-                                <h2><a href="#">Ekşioğlu Birlik Sitesi</a></h2>
-                                <p class="my-3"><a href="#" class="more-39291">Detalı Bilgi</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5">
-                        <div class="post-entry-1 h-100">
-
-                            <div class="post-entry-1-contents">
-                                <span class="meta">Ocak 30, 2019</span>
-                                <h2><a href="#">Ekşioğlu Birlik Sitesi</a></h2>
-                                <p class="my-3"><a href="#" class="more-39291">Detalı Bilgi</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5">
-                        <div class="post-entry-1 h-100">
-
-                            <div class="post-entry-1-contents">
-                                <span class="meta">Ocak 30, 2019</span>
-                                <h2><a href="#">Ekşioğlu Birlik Sitesi</a></h2>
-                                <p class="my-3"><a href="#" class="more-39291">Detalı Bilgi</a></p>
+                        <div class="col-6">
+                            <div class="d-flex ml-auto">
+                                <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                    <span class="icon-envelope mr-2"></span>
+                                    <span class="d-none d-md-inline-block">info@eksioglubirlik.com</span>
+                                </a>
+                                <a href="#" class="d-flex align-items-center">
+                                    <span class="icon-phone mr-2"></span>
+                                    <span class="d-none d-md-inline-block">+90 532 168 35 93</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <h2 class="footer-heading mb-4">Hakkımızda</h2>
-                                <p>
-                                    Firmamız inşaat sektörüne 1978 yılında şahıs firması olarak başlamış 1990 yılında şirketleşerek Ekşioğlu Birlik İnş. Tic. Şti. adını almıştır.
-                                    Bu güne kadar yapmış olduğu çeşitli okul, hastahane, spor tesis, bina güçlendirme, konut ve banka binaları ile sektördeki kalite ve tecrübesini ortaya koymuştur.
-                                </p>
-                            </div>
-                            <div class="col-md-4 ml-auto">
-                                <h2 class="footer-heading mb-4">Site Haritası</h2>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Hakkımızda</a></li>
-                                    <li><a href="#">Projelerimiz</a></li>
-                                    <li><a href="#">Hakkımızda</a></li>
-                                    <li><a href="#">Referanslarımız</a></li>
-                                    <li><a href="#">İletişim</a></li>
-                                </ul>
-                            </div>
+            <div class="site-navbar site-navbar-target js-sticky-header">
+
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-2">
+                            <a href="index.html">
+                                <img src="images/logo.jpg" alt="Image">
+                            </a>
+
+                            <h1 class="my-0 site-logo">
+                            </h1>
                         </div>
-                    </div>
-                    <div class="col-md-4 ml-auto">
-                        <div class="mb-5">
-                            <h2 class="footer-heading mb-4">Bültenimize Abone OLun</h2>
-                            <form action="#" method="post" class="footer-suscribe-form">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control rounded-0 border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Email Adresiniz" aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary text-white" type="button" id="button-addon2">Bana Ulaşın</button>
-                                    </div>
+                        <div class="col-10">
+                            <nav class="site-navigation text-right" role="navigation">
+                                <div class="container">
+                                    <div id="mobileMenuOpenBtn" class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                                    <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                                        <li><a onclick="closeMenu()" href="#home-section" class="nav-link">Sayfa Başı</a></li>
+                                        <li><a onclick="closeMenu()" href="#about-section" class="nav-link">Hakkında</a></li>
+                                        <li><a onclick="closeMenu()" href="#services-section" class="nav-link">Hizmetler</a></li>
+                                        <li><a onclick="closeMenu()" href="#projects-section" class="nav-link">Devam Eden Projeler</a></li>
+                                        <li><a onclick="closeMenu()" href="#contact-section" class="nav-link">İletişim</a></li>
+                                        <li><a onclick="closeMenu()" href="done.html" class="nav-link">Biten Projeler</a></li>
+                                    </ul>
                                 </div>
-                            </form>
+                            </nav>
                         </div>
 
-                        <h2 class="footer-heading mb-4">Bizi Takip Edin</h2>
-                        <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-                        <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                        <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                        <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
                     </div>
                 </div>
-                <div class="row pt-5 mt-5 text-center">
-                    <div class="col-md-12">
-                        <div class="pt-5">
-                            <p class="small">
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır. | Bu Tasarım <a href="https://astroid.com.tr" target="_blank"><b>Astroid</b></a> Tarafından Yapılmıştır 
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
+            </div>
+        </div>
+        <!-- ana resim -->
+        <div class="site-blocks-cover" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.4" id="home-section">
+
+        </div>
+        <!-- ön metinler -->
+        <div class="site-section  border-bottom" >
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                        <div class="media custom-media">
+                            <div class="mr-3 icon"><span class="flaticon-window display-4"></span></div>
+                            <div class="media-body">
+                                <h5 class="mt-0">İlerikçi Yapılar</h5>
+                                Buraya metinler yazacağız
+                            </div>
                         </div>
                     </div>
+
+
+                    <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                        <div class="media custom-media">
+                            <div class="mr-3 icon"><span class="flaticon-sit-down display-4"></span></div>
+                            <div class="media-body">
+                                <h5 class="mt-0">Tasarımsal Mimari</h5>
+                                Buraya metinler yazacağız
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                        <div class="media custom-media">
+                            <div class="mr-3 icon"><span class="flaticon-turned-off display-4"></span></div>
+                            <div class="media-body">
+                                <h5 class="mt-0">İç Mimari</h5>
+                                Buraya metinler yazacağız
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- hakkımızda -->
+        <div class="site-section about-section" id="about-section" >
+            <div class="container">
+                <div class="row align-items-center mb-5 pb-5">
+                    <div class="col-lg-7 img-years mb-5 mb-lg-0">
+                        <img src="images/isometric.jpg" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 ml-auto">
+                        <span class="sub-title">Bizi Tanıyın</span>
+                        <h3 class="mb-4">Hakkımızda </h3>
+                        <p class="mb-4">
+                            Firmamız inşaat sektörüne 1978 yılında şahış firması olarak başlayıp 1990 yılında şirketleşerek Ekşioğlu Birlik İnş. Tic. Ltd. Şti. adını almıştır.<br />
+                            Bugüne kadar yapmış olduğu bakım-onarım,bina güçlendirme ve kentsel dönüşüm projeleriyle sektörde kalite ve tecrübesini arttırarak yeni projelere imza atmaya devam etmektedir.
+                            <br /> <br />
+                            Misyon
+                            <br />
+                            Hızla değişen ve gelişen inşaat sektöründe fark yaratan, yenilikçi ve en kalite firmalardan biri olmak.<br /><br />
+                            Vizyon <br />
+                            İnsanı merkez alarak toplumsal yaşama ve şehre değer katacak güvenli, yüksek kaliteli projeleri tasarlamayı ve inşaa etmeyi vizyon edindik.
+                        </p>
+                        <!--<ul class="list-unstyled ul-check text-left success mb-5">
+                            <li>Asperiores modi sed</li>
+                            <li>Enim cum voluptas</li>
+                            <li>Commodi aliquid aspernatur</li>
+                            <li>Cupiditate fuga ipsum commodi</li>
+                        </ul>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hizmetlerimiz -->
+        <div class="site-section" id="services-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <span class="sub-title">Hizmetler</span>
+                        <h2 class="font-weight-bold text-black">Hizmetlerimiz</h2>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, explicabo, quasi. Magni deserunt sunt labore.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="media custom-media">
+                            <div class="mr-3 icon"><span class="flaticon-interior-design display-4"></span></div>
+                            <div class="media-body">
+                                <h5 class="mt-0">Yenilikçi Yapı Tasarımları</h5>
+                                Geleceği inşaa ediyoruz
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="media custom-media">
+                            <div class="mr-3 icon"><span class="flaticon-step-ladder display-4"></span></div>
+                            <div class="media-body">
+                                <h5 class="mt-0">Mimari Tasarım</h5>
+                                Ölçekli, güncel, yönetmeliklere uygun
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="media custom-media">
+                            <div class="mr-3 icon"><span class="flaticon-turned-off display-4"></span></div>
+                            <div class="media-body">
+                                <h5 class="mt-0">İç Mekan Tasarımı</h5>
+                                Modaya Uyun
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="media custom-media">
+                            <div class="mr-3 icon"><span class="flaticon-window display-4"></span></div>
+                            <div class="media-body">
+                                <h5 class="mt-0">Modern Perncereler</h5>
+                                Konfor serisi pencereler sayesinde içeriye istemediğiniz hiçbirşey giremez
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="media custom-media">
+                            <div class="mr-3 icon"><span class="flaticon-measuring display-4"></span></div>
+                            <div class="media-body">
+                                <h5 class="mt-0">İşinin Ehli Mimarlar</h5>
+                                Ekibimize güvenin. ihtiyaçlarınızı anlıyoruz
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="media custom-media">
+                            <div class="mr-3 icon"><span class="flaticon-sit-down display-4"></span></div>
+                            <div class="media-body">
+                                <h5 class="mt-0">Anahtar Teslimi Daireler</h5>
+                                Dayayalım Döşeyelim Teslim Edelim
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- devam eden projeler -->
+        <div class="site-section" id="projects-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <span class="sub-title">DEVAM EDEN PROJELERİMİZ</span>
+                        <h2 class="font-weight-bold text-black">Ekşioğlu Burhaniye Konakları</h2>
+                        <p class="mb-5">Sınırsız müşteri memnuniyeti içerir</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/img_1.jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#">Yeni Yuvanız</a></h3>
+                        <span class="text-muted">Yedi Blok</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/img_2.jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#">Huzur Dolu</a></h3>
+                        <span class="text-muted">Her Pencereden Manzara</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/img_3.jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#">Merkezi Yerleşim</a></h3>
+                        <span class="text-muted">Yeni Komşularınız Sizi Bekler</span>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/img_4.jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#">Kafe - Restoran</a></h3>
+                        <span class="text-muted">Sosyalleşme Zamaı</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/img_5.jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/img_5.jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#">Prestij</a></h3>
+                        <span class="text-muted">Kıskanılacaksınız</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/img_6.jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/img_6.jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#">Modern Binalar</a></h3>
+                        <span class="text-muted">Modaya uyun. çağı yakalayın</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- müşteriler ne söyledi -->
+        <div class="container site-section block-13 testimonial-wrap">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span class="sub-title">Mutlu Ev Sahipleri</span>
+                    <h2 class="font-weight-bold text-black mb-5">Neler Söylediler ?</h2>
+                </div>
+            </div>
+
+            <div class="nonloop-block-13 owl-carousel">
+
+                <div class="testimony px-5">
+                    <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+                    <h3>Gönül KAYAALP</h3>
+                    <span class="sub-title">Ekşioğlu Proje 1 Ev Sahibi</span>
+                    <p>&ldquo;<em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium non eligendi totam natus ullam cumque! Assumenda optio, ad in! Nesciunt natus veritatis hic iste quas. Sunt iste autem vel repudiandae.</em>&rdquo;</p>
+                </div>
+
+
+                <div class="testimony px-5">
+                    <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+                    <h3>Kadir AKYIL</h3>
+                    <span class="sub-title">Ekşioğlu Proje 2 Ev Sahibi</span>
+                    <p>&ldquo;<em>Laboriosam nisi natus quos soluta blanditiis iste in distinctio fugiat perferendis, architecto eveniet provident, consequatur dolore ab nihil voluptatibus laborum magnam cum assumenda nobis, nam quam quae! Unde porro laboriosam nam qui! Eligendi, qui!</em>&rdquo;</p>
+                </div>
+
+                <div class="testimony px-5">
+                    <img src="images/person_4.jpg" alt="Image" class="img-fluid">
+                    <h3>Yiğit GENÇ</h3>
+                    <span class="sub-title">Ekşioğlu Proje 3 Ev Sahibi</span>
+                    <p>&ldquo;<em>Voluptatibus sed vero corporis reiciendis, ducimus iste aliquam doloribus voluptas nam quo assumenda perferendis excepturi accusantium, ipsam minus tempora earum exercitationem laborum. Delectus voluptate quaerat repellat obcaecati. Qui nemo ad similique facere modi dolores.</em>&rdquo;</p>
+                </div>
+            </div>
+        </div>
+        <!-- iletişim -->
+        <div class="site-section bg-light" id="contact-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <span class="sub-title">TANIŞALIM</span>
+                        <h2 class="font-weight-bold text-black">Bize Ulaşın</h2>
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-12">
+
+                        <form action="#" class="p-5 bg-white">
+
+                            <div class="row form-group">
+                                <div class="col-md-12 mb-3 mb-md-0">
+                                    <label class="font-weight-bold" for="fullname">Ad Soyad</label>
+                                    <input type="text" id="fullname" class="form-control" placeholder="Tam Adınız">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label class="font-weight-bold" for="email">Eposta</label>
+                                    <input type="email" id="email" class="form-control" placeholder="E posta Adresiniz">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label class="font-weight-bold" for="message">Mesajınız</label>
+                                    <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Bize merhaba diyin"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <input type="submit" value="Gönder" class="btn btn-primary rounded-0 btn-lg">
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center d-flex">
+                    <div class="col-12 mt-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.3516709165483!2d30.680755399848376!3d36.90585530200236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c38fd87aa11bfb%3A0x54c65cc799e0972d!2zR8O8bcO8xZ9sw7wgbWVkaWthbA!5e0!3m2!1str!2str!4v1584982819411!5m2!1str!2str" frameborder="0" style="border:0;width:100%;height:100%;min-height:400px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="site-footer border-top">
+            <div class="container">
+               
+                <div class="row mt-2 pb-2 text-center">
+                    <div class="col-md-12">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | Powered by <a href="https://www.astroid.comitr" target="_blank">Astroid</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </footer>
     </div>
+
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
+    <!--bunu body içinde sona taşık-->
+    <script>
+        function closeMenu() {
+            var body = $("body").hasClass("offcanvas-menu");
+            if (body) {
+                document.getElementById("mobileMenuCloseBtn").click();
+            }
+        }
+    </script>
 
 </body>
 </html>
