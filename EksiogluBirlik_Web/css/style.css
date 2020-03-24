@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #ced4da !important; }
 
 .site-footer {
-  padding: 4em 0;
+  
   background: #333333; }
   .site-footer p {
     color: #737373; }
@@ -739,13 +739,14 @@ h1, h2, h3, h4, h5, h6 {
     border: 7px solid #ff5733; }
 
 .sub-title {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  font-size: 12px;
-  font-weight: 700;
-  color: #ff5733;
-  margin-bottom: 10px; }
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(2, 134, 180);
+    margin-bottom: 10px;
+}
 
 .about-section .img-years {
   position: relative; }
