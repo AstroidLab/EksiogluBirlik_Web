@@ -768,6 +768,7 @@
     <Content Include="scss\bootstrap\utilities\_visibility.scss" />
     <Content Include="scss\bootstrap\vendor\_rfs.scss" />
     <Content Include="scss\style.scss" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
