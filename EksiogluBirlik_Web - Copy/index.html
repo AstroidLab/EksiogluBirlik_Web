@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <title>EKŞİOĞLU &mdash; Kusursuz Yapılar</title>
     <meta charset="utf-8">
@@ -32,6 +32,20 @@
 
         .site-navbar-top {
             background: rgba(0, 0, 0, 0.55) !important;
+        }
+
+        .dropdown-item.active, .dropdown-item:active, .dropdown-item:hover {
+            background-color: rgb(0, 83, 112) !important;
+            /*background-color: inherit !important;*/
+        }
+
+        .site-mobile-menu .site-nav-wrap a.active, .site-mobile-menu .site-nav-wrap a:hover {
+            color: white;
+        }
+
+        .site-navbar .site-navigation .site-menu a {
+            font-size: 18px !important;
+            color: white !important;
         }
     </style>
 
@@ -71,11 +85,11 @@
                         </div>
                         <div class="col-6">
                             <div class="d-flex ml-auto">
-                                <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                <a href="mailto:info@eksioglubirlik.com" class="d-flex align-items-center ml-auto mr-4">
                                     <span class="icon-envelope mr-2"></span>
                                     <span class="d-none d-md-inline-block">info@eksioglubirlik.com</span>
                                 </a>
-                                <a href="#" class="d-flex align-items-center">
+                                <a href="tel:+905321683593" class="d-flex align-items-center">
                                     <span class="icon-phone mr-2"></span>
                                     <span class="d-none d-md-inline-block">+90 532 168 35 93</span>
                                 </a>
@@ -108,9 +122,18 @@
                                         <li><a onclick="closeMenu()" href="#home-section" class="nav-link">Sayfa Başı</a></li>
                                         <li><a onclick="closeMenu()" href="#about-section" class="nav-link">Hakkında</a></li>
                                         <li><a onclick="closeMenu()" href="#services-section" class="nav-link">Hizmetler</a></li>
-                                        <li><a onclick="closeMenu()" href="#projects-section" class="nav-link">Devam Eden Projeler</a></li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a class="text-black-50 dropdown-toggle" href="javascript:void(0)" role="button" id="projectsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Projeler
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="projectsMenu" style="background: rgb(2, 134, 180) !important; color: white !important">
+                                                    <a class="dropdown-item" onclick="closeMenu()" href="#projects-section">Devam Eden Projeler</a>
+                                                    <a class="dropdown-item" onclick="closeMenu()" href="#projectsDone-section">Biten Projeler</a>
+                                                </div>
+                                            </div>
+                                        </li>
                                         <li><a onclick="closeMenu()" href="#contact-section" class="nav-link">İletişim</a></li>
-                                        <li><a onclick="closeMenu()" href="done.html" class="nav-link">Biten Projeler</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -269,7 +292,7 @@
             </div>
         </div>
         <!-- devam eden projeler -->
-        <div class="site-section" id="projects-section">
+        <div class="site-section pb-0" id="projects-section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-7 text-center">
@@ -327,10 +350,83 @@
                         <hr>
 
                         <h3 class="col-sm-12 mb-0 text-center"><a href="/pdf/burhaniyeCat.pdf" class="btn btn-primary align-slef-center">Katalog İçin Tıklayın</a></h3>
-                        <br>
                         <span class="text-muted col-12 text-center">Tüm detayları inceleyebilirsiniz</span>
+                        <hr />
                     </div>
 
+                </div>
+            </div>
+        </div>
+        <!-- biten projeler 1 -->
+        <div class="site-section" id="projectsDone-section">
+            <div class="container">
+
+                <div class="row align-items-center mb-5 pb-5">
+                    <div class="col-lg-7 img-years mb-5 mb-lg-0">
+                        <img src="images/isometric.jpg" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 ml-auto">
+
+                        <h3 class="mb-4">Biten Projeler </h3>
+
+                        <ul class="list-unstyled ul-check text-left success mb-5">
+                            <li>Selimoğlu Apartmanı (Üsküdar)</li>
+                            <li>Üçyıldız Sitesi (Üsküdar)</li>
+                            <li>Ekşioğlu Birlik Sitesi (Ümraniye)</li>
+                            <li>Marmara Üniversitesi Göztepe *Kampüsü Diş Hekimliği Fakültesi Binası Yapımı</li>
+                            <li>Ziraat Bankası Mecidiköy Sağlık ve *Misafirhane Binaları Bakım Onarım İşleri</li>
+                            <li>Sağlık Bakanlığı Şişli Etfal Hastanesi Çatı Tadilat İşleri</li>
+                            <li>Ziraat Bankası Kadıköy Sağlık Servisi Bakım Onarım İşleri</li>
+                            <li>Ziraat Bankası Hasanpaşa Şubesi Hizmet Binası Tadilat İşleri</li>
+                            <li>Ziraat Bankası Cağaloğlu Sermaye Piyasaları Müdürlüğü Bakım ve Onarım İşleri</li>
+                            <li>Ziraat Bankası Fatih Lojman Binası Tadilat ve Onarım İşleri</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <h2 class="font-weight-bold text-black">Ekşioğlu Üçyıldız Sitesi</h2>
+                        <p class="mb-5">Söz Verdiğimiz Gibi ...</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/ucyildiz (1).jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/ucyildiz (1).jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#"></a></h3>
+                        <span class="text-muted"></span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/ucyildiz (2).jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/ucyildiz (2).jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#"></a></h3>
+                        <span class="text-muted"></span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/ucyildiz (3).jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/ucyildiz (3).jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#"></a></h3>
+                        <span class="text-muted"></span>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/ucyildiz (5).jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/ucyildiz (5).jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#"></a></h3>
+                        <span class="text-muted"></span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 project-entry">
+                        <a href="images/ucyildiz (6).jpg" class="d-block figure" data-fancybox="gallery">
+                            <img src="images/ucyildiz (6).jpg" alt="Image" class="img-fluid">
+                        </a>
+                        <h3 class="mb-0"><a href="#"></a></h3>
+                        <span class="text-muted"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -414,47 +510,43 @@
                 <br />
             </div>
 
-            <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.8686089894363!2d29.050669815662445!3d41.028130426151314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac818cdcf2a43%3A0x35d50491ae75eec8!2zQnVyaGFuaXllLCBOZcWfZXQgQmV5IFNrLiBObzo0MCwgMzQ2NzYgw5xza8O8ZGFyL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1585553609669!5m2!1str!2str" width="0" height="0" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="map-responsive container">
+                <div class="">
+                    <iframe class="h-100 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.8686089894363!2d29.050669815662445!3d41.028130426151314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac818cdcf2a43%3A0x35d50491ae75eec8!2zQnVyaGFuaXllLCBOZcWfZXQgQmV5IFNrLiBObzo0MCwgMzQ2NzYgw5xza8O8ZGFyL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1585553609669!5m2!1str!2str" width="0" height="0" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
 
                 <style>
 
-                    .map-responsive {
-                        overflow: hidden;
-                        padding-bottom: 20%;
-                        position: relative;
-                        height: 0;
-                    }
 
-                        .map-responsive iframe {
-                            left: 0;
-                            top: 0;
-                            height: 85%;
-                            width: 100%;
-                            position: absolute;
-                        }
+                    .map-responsive iframe {
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        min-height: 400px;
+                        border-radius: 10px;
+                    }
                 </style>
 
             </div>
 
-            <!-- footer -->
-            <footer class="site-footer border-top">
-                <div class="container">
+        </div>
 
-                    <div class="row mt-2 pb-2 text-center">
-                        <div class="col-md-12">
-                            <p>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | Powered by <a href="https://3gen.it" target="_blank">3Gen IT Solutions</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
-                        </div>
-
+        <!-- footer -->
+        <footer class="site-footer border-top">
+            <div class="container">
+                <div class="row mt-2 pb-2 text-center">
+                    <div class="col-md-12">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | Powered by <a href="https://3gen.it" target="_blank">3Gen IT Solutions</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
