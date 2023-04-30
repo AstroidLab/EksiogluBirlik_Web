@@ -122,7 +122,9 @@
     <Content Include="images\img_5.jpg" />
     <Content Include="images\img_6.jpg" />
     <Content Include="images\isometric.jpg" />
+    <Content Include="images\logo.ico" />
     <Content Include="images\logo.jpg" />
+    <Content Include="images\logo.png" />
     <Content Include="images\person_1.jpg" />
     <Content Include="images\person_2.jpg" />
     <Content Include="images\person_3.jpg" />
