@@ -729,14 +729,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-border {
   position: relative; }
-  .img-border:before {
-    position: absolute;
-    content: "";
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    border: 7px solid #ff5733; }
+    .img-border:before {
+        position: absolute;
+        content: "";
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        border: 7px solid #ff5733;
+    }
 
 .sub-title {
     display: block;
